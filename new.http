@@ -1,0 +1,28 @@
+post https://umashankar3imvbnjscpfvwof.drops.nxtwave.tech/register
+Content-Type:application/json
+
+{
+  "username": "adam",
+  "name": "Adam Richard",
+  "password": "ri",
+  "gender": "male",
+  "location": "Detroit"
+}
+###
+POST https://umashankar3imvbnjscpfvwof.drops.nxtwave.tech/login 
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567"
+}
+
+### 
+PUT https://umashankar3imvbnjscpfvwof.drops.nxtwave.tech/change-password 
+Content-Type:application/json 
+
+{
+  "username": "adam_richard",
+  "oldPassword": "richard_567",
+  "newPassword": "richard@123"
+}
